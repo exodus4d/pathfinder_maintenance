@@ -1,0 +1,323 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="cache-control" content="public">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+
+    <meta name="description" content="PATHFINDER is an 'open source' mapping tool for EVE ONLINE,
+    primarily developed to enrich the gameplay of small scale PvP and PvE.">
+    <meta name="keywords" content="eve,wormhole,mapping,tool,mmo,space,game">
+    <meta name="author" content="Exodus 4D">
+
+    <title>Pathfinder</title>
+
+    <meta name="theme-color" content="#2b2b2b">                                                     
+    <meta name="msapplication-navbutton-color" content="#2b2b2b">                                   
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2b2b2b">                           
+    
+	<style>
+		html, body, div, span, h1, p, i {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font: inherit;
+		  font-size: 100%;
+		  vertical-align: baseline;
+		}
+
+		html {
+		  line-height: 1;
+		}
+
+		* {
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+
+		*:before, *:after {
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+
+		html {
+		  font-size: 62.5%;
+		  -webkit-tap-highlight-color: transparent;
+		}
+
+		body {
+		  font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-style: normal;
+		  font-weight: 400;
+		  font-size: 12px;
+		  line-height: 1.5;
+		  color: #63676a;
+		  background-color: #1d1d1d;
+		}
+
+		h1 {
+		  font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-weight: 700;
+		  line-height: 1.1;
+		  color: inherit;
+		}
+
+		h1 {
+		  margin-top: 18px;
+		  margin-bottom: 9px;
+		}
+
+		h1 {
+		  font-size: 22px;
+		}
+
+		p {
+		  margin: 0 0 9px;
+		}
+
+		.lead {
+		  margin-bottom: 18px;
+		  font-size: 16px;
+		  font-weight: 200;
+		  line-height: 1.4;
+		}
+
+		@media (min-width: 780px) {
+		  .lead {
+			font-size: 16px;
+		  }
+		}
+
+		.fas {
+		  -moz-osx-font-smoothing: grayscale;
+		  -webkit-font-smoothing: antialiased;
+		  display: inline-block;
+		  font-style: normal;
+		  font-variant: normal;
+		  text-rendering: auto;
+		  line-height: 1;
+		}
+
+		.fa-fw {
+		  text-align: center;
+		  width: 1.25em;
+		}
+
+		.fa-cogs:before {
+		  content: "\f085";
+		}
+
+		.fas {
+		  font-family: 'Font Awesome 5 Free';
+		  font-weight: 900;
+		}
+
+		html, body {
+		  margin: 0;
+		  padding: 0;
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+
+		html, body {
+		  width: 100%;
+		  overflow-x: hidden;
+		}
+
+		html {
+		  height: 100%;
+		}
+
+		body {
+		  min-height: 100%;
+		  height: auto;
+		  position: relative;
+		}
+
+		html {
+		  margin: 0;
+		  padding: 0;
+		  height: 100%;
+		  position: relative;
+		}
+
+		body {
+		  margin: 0;
+		  padding: 0;
+		  min-height: 100%;
+		  direction: ltr;
+		}
+
+		h1 {
+		  margin: 0;
+		  font-family: "Oxygen Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		*:focus {
+		  outline: 0 !important;
+		}
+
+		h1 {
+		  letter-spacing: -1px;
+		  font-size: 22px;
+		  margin: 10px 0;
+		}
+
+		.txt-color.txt-color-warning {
+		  color: #e28a0d !important;
+		}
+
+		body {
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		  cursor: default;
+		}
+
+		.pf-body {
+		  overflow: hidden;
+		}
+
+		::selection {
+		  background: #adadad;
+		  color: #1d1d1d;
+		}
+
+		::-moz-selection {
+		  background: #adadad;
+		  color: #1d1d1d;
+		}
+
+		.pf-color-line {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 3px;
+		  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2Yzg0ZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2Yzg0ZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+		  background-size: 100%;
+		  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #66c84f), color-stop(100%, #66c84f));
+		  background-image: -moz-linear-gradient(left, #66c84f, #66c84f 100%);
+		  background-image: -webkit-linear-gradient(left, #66c84f, #66c84f 100%);
+		  background-image: linear-gradient(to right, #66c84f, #66c84f 100%);
+		}
+
+		.pf-color-line.warning {
+		  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyOGEwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyOGEwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+		  background-size: 100%;
+		  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e28a0d), color-stop(100%, #e28a0d));
+		  background-image: -moz-linear-gradient(left, #e28a0d, #e28a0d 100%);
+		  background-image: -webkit-linear-gradient(left, #e28a0d, #e28a0d 100%);
+		  background-image: linear-gradient(to right, #e28a0d, #e28a0d 100%);
+		}
+
+		.pf-splash {
+		  position: absolute;
+		  z-index: 2000;
+		  background-color: #1d1d1d;
+		  color: #63676a;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  will-change: opacity;
+		}
+
+		.pf-splash .pf-splash-title {
+		  position: fixed;
+		  left: 50%;
+		  top: 30%;
+		  text-align: center;
+		  max-width: 500px;
+		  padding: 20px;
+		  -moz-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  -webkit-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+
+		@font-face {
+		  font-family: 'Oxygen';
+		  src: url(public/fonts/oxygen-regular-webfont.eot);
+		  src: url(public/fonts/oxygen-regular-webfont.eot) format("embedded-opentype"), url(public/fonts/oxygen-regular-webfont.woff2) format("woff2"), url(public/fonts/oxygen-regular-webfont.woff) format("woff"), url(public/fonts/oxygen-regular-webfont.ttf) format("truetype");
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'Font Awesome 5 Free';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url(public/fonts/fa-regular-400.eot);
+		  src: url(public/fonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(public/fonts/fa-regular-400.woff2) format("woff2"), url(public/fonts/fa-regular-400.woff) format("woff"), url(public/fonts/fa-regular-400.ttf) format("truetype"), url(public/fonts/fa-regular-400.svg#fontawesome) format("svg");
+		}
+
+		@font-face {
+		  font-family: 'Font Awesome 5 Free';
+		  font-style: normal;
+		  font-weight: 900;
+		  src: url(public/fonts/fa-solid-900.eot);
+		  src: url(public/fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(public/fonts/fa-solid-900.woff2) format("woff2"), url(public/fonts/fa-solid-900.woff) format("woff"), url(public/fonts/fa-solid-900.ttf) format("truetype"), url(public/fonts/fa-solid-900.svg#fontawesome) format("svg");
+		}
+
+		@font-face {
+		  font-family: 'Oxygen Bold';
+		  src: url(public/fonts/oxygen-bold-webfont.eot);
+		  src: url(public/fonts/oxygen-bold-webfont.eot) format("embedded-opentype"), url(public/fonts/oxygen-bold-webfont.woff2) format("woff2"), url(public/fonts/oxygen-bold-webfont.woff) format("woff"), url(public/fonts/oxygen-bold-webfont.ttf) format("truetype");
+		  font-weight: 700;
+		  font-style: normal;
+		}
+		</style>
+</head>
+<body class="pf-body pf-landing">
+<div class="pf-splash pf-splash-warning">
+    <div class="pf-color-line warning"></div>
+    <div class="pf-splash-title">
+        <h1>
+            <span class="txt-color txt-color-warning">
+                <i class="fas fa-fw fa-cogs"></i>&nbsp;Maintenance
+            </span>
+        </h1>
+        <p class="lead">
+            Server is temporary under scheduled maintenance.<br>Please wait a few minutes…<br>
+        </p>
+
+        <svg class="lds-gear-set" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;"><g transform="translate(50 50)"> <g transform="translate(-17 -17) scale(0.5)"> <g transform="rotate(357.673)">
+            <animateTransform attributeName="transform" type="rotate" values="0;360" keyTimes="0;1" dur="9s" begin="0s" repeatCount="indefinite"></animateTransform><path d="M37.43995192304605 -6.5 L47.43995192304605 -6.5 L47.43995192304605 6.5 L37.43995192304605 6.5 A38 38 0 0 1 31.070237969796747 21.87784981437163 L31.070237969796747 21.87784981437163 L38.141305781662226 28.948917626237105 L28.948917626237105 38.14130578166222 L21.87784981437163 31.070237969796743 A38 38 0 0 1 6.5 37.43995192304605 L6.5 37.43995192304605 L6.500000000000001 47.43995192304605 L-6.499999999999995 47.43995192304606 L-6.499999999999996 37.43995192304606 A38 38 0 0 1 -21.877849814371626 31.070237969796747 L-21.877849814371626 31.070237969796747 L-28.9489176262371 38.141305781662226 L-38.14130578166222 28.948917626237105 L-31.070237969796743 21.87784981437163 A38 38 0 0 1 -37.43995192304605 6.5000000000000036 L-37.43995192304605 6.5000000000000036 L-47.43995192304605 6.500000000000004 L-47.43995192304606 -6.499999999999993 L-37.43995192304606 -6.499999999999994 A38 38 0 0 1 -31.070237969796747 -21.877849814371626 L-31.070237969796747 -21.877849814371626 L-38.141305781662226 -28.9489176262371 L-28.94891762623711 -38.14130578166222 L-21.877849814371633 -31.070237969796743 A38 38 0 0 1 -6.500000000000005 -37.43995192304605 L-6.500000000000005 -37.43995192304605 L-6.500000000000007 -47.43995192304605 L6.49999999999999 -47.43995192304606 L6.499999999999992 -37.43995192304606 A38 38 0 0 1 21.877849814371622 -31.07023796979675 L21.877849814371622 -31.07023796979675 L28.948917626237098 -38.141305781662226 L38.14130578166221 -28.94891762623711 L31.07023796979674 -21.877849814371633 A38 38 0 0 1 37.43995192304605 -6.500000000000007 M0 -22A22 22 0 1 0 0 22 A22 22 0 1 0 0 -22" fill="#63676a"></path></g></g> <g transform="translate(0 22) scale(0.4)"> <g transform="rotate(339.827)">
+            <animateTransform attributeName="transform" type="rotate" values="360;0" keyTimes="0;1" dur="9s" begin="-0.5625s" repeatCount="indefinite"></animateTransform><path d="M37.43995192304605 -6.5 L47.43995192304605 -6.5 L47.43995192304605 6.5 L37.43995192304605 6.5 A38 38 0 0 1 31.070237969796747 21.87784981437163 L31.070237969796747 21.87784981437163 L38.141305781662226 28.948917626237105 L28.948917626237105 38.14130578166222 L21.87784981437163 31.070237969796743 A38 38 0 0 1 6.5 37.43995192304605 L6.5 37.43995192304605 L6.500000000000001 47.43995192304605 L-6.499999999999995 47.43995192304606 L-6.499999999999996 37.43995192304606 A38 38 0 0 1 -21.877849814371626 31.070237969796747 L-21.877849814371626 31.070237969796747 L-28.9489176262371 38.141305781662226 L-38.14130578166222 28.948917626237105 L-31.070237969796743 21.87784981437163 A38 38 0 0 1 -37.43995192304605 6.5000000000000036 L-37.43995192304605 6.5000000000000036 L-47.43995192304605 6.500000000000004 L-47.43995192304606 -6.499999999999993 L-37.43995192304606 -6.499999999999994 A38 38 0 0 1 -31.070237969796747 -21.877849814371626 L-31.070237969796747 -21.877849814371626 L-38.141305781662226 -28.9489176262371 L-28.94891762623711 -38.14130578166222 L-21.877849814371633 -31.070237969796743 A38 38 0 0 1 -6.500000000000005 -37.43995192304605 L-6.500000000000005 -37.43995192304605 L-6.500000000000007 -47.43995192304605 L6.49999999999999 -47.43995192304606 L6.499999999999992 -37.43995192304606 A38 38 0 0 1 21.877849814371622 -31.07023796979675 L21.877849814371622 -31.07023796979675 L28.948917626237098 -38.141305781662226 L38.14130578166221 -28.94891762623711 L31.07023796979674 -21.877849814371633 A38 38 0 0 1 37.43995192304605 -6.500000000000007 M0 -22A22 22 0 1 0 0 22 A22 22 0 1 0 0 -22" fill="#5cb85c"></path></g></g> <g transform="translate(28 4) scale(0.3)"> <g transform="rotate(20.1727)">
+            <animateTransform attributeName="transform" type="rotate" values="0;360" keyTimes="0;1" dur="9s" begin="-0.5625s" repeatCount="indefinite"></animateTransform><path d="M37.43995192304605 -6.5 L47.43995192304605 -6.5 L47.43995192304605 6.5 L37.43995192304605 6.5 A38 38 0 0 1 31.070237969796747 21.87784981437163 L31.070237969796747 21.87784981437163 L38.141305781662226 28.948917626237105 L28.948917626237105 38.14130578166222 L21.87784981437163 31.070237969796743 A38 38 0 0 1 6.5 37.43995192304605 L6.5 37.43995192304605 L6.500000000000001 47.43995192304605 L-6.499999999999995 47.43995192304606 L-6.499999999999996 37.43995192304606 A38 38 0 0 1 -21.877849814371626 31.070237969796747 L-21.877849814371626 31.070237969796747 L-28.9489176262371 38.141305781662226 L-38.14130578166222 28.948917626237105 L-31.070237969796743 21.87784981437163 A38 38 0 0 1 -37.43995192304605 6.5000000000000036 L-37.43995192304605 6.5000000000000036 L-47.43995192304605 6.500000000000004 L-47.43995192304606 -6.499999999999993 L-37.43995192304606 -6.499999999999994 A38 38 0 0 1 -31.070237969796747 -21.877849814371626 L-31.070237969796747 -21.877849814371626 L-38.141305781662226 -28.9489176262371 L-28.94891762623711 -38.14130578166222 L-21.877849814371633 -31.070237969796743 A38 38 0 0 1 -6.500000000000005 -37.43995192304605 L-6.500000000000005 -37.43995192304605 L-6.500000000000007 -47.43995192304605 L6.49999999999999 -47.43995192304606 L6.499999999999992 -37.43995192304606 A38 38 0 0 1 21.877849814371622 -31.07023796979675 L21.877849814371622 -31.07023796979675 L28.948917626237098 -38.141305781662226 L38.14130578166221 -28.94891762623711 L31.07023796979674 -21.877849814371633 A38 38 0 0 1 37.43995192304605 -6.500000000000007 M0 -22A22 22 0 1 0 0 22 A22 22 0 1 0 0 -22" fill="#375959"></path></g></g></g></svg>
+
+    </div>
+</div>   
+
+
+    
+
+
+
+</body></html>
